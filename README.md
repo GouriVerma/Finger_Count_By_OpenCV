@@ -9,3 +9,7 @@ ROI is retrieved from the whole frame captured, then absdiff is found between ba
 
 ## Step 3: Counting the number of fingers:
 The topmost, bottommost, leftmost and rightmost points are derived from the contour and maximum of all those is found. The centre of hand is calculated by ((left+right)//2) and ((top+bottom)//2). A completely black image of same dimesnions as threshold is made and a white circle of certain width say 20 is drawn from the centre of radius 0.6*max distance on that black frame. The bitwise and is found for this new frame with circle and the thresholded to only get the portions of threshold lying in the width of circle. This final part involves discrete portions of fingers and wrist. Ignoring the contour of wrist, the number of contours is counted and the number of contours represent the number of fingers.
+
+
+![Untitled design(7)](https://github.com/GouriVerma/Finger_Count_By_OpenCV/assets/122892114/ca809f0a-e478-4036-80a9-dd7539addb0a)
+![Untitled design(6)](https://github.com/GouriVerma/Finger_Count_By_OpenCV/assets/122892114/7088103f-44bb-47ee-8997-e5d1128422bc)
